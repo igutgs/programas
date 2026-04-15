@@ -1,0 +1,37 @@
+#include <stdio.h>
+//#include <
+//#include <
+
+int main() {
+
+
+    int opcao, curtidas = 0;
+    
+    do{
+        printf("\n======= REDE SOCIAL =======");
+        printf("\n1 - Curtir uma postagem");
+        printf("\n2 - Ver quantidade de curtidas");
+        printf("\n0 - Sair");
+        
+        printf("\nEscolha sua opção: ");
+        scanf("%d", opcao);
+        
+        switch(opcao){
+            case 1:
+                curtidas++;
+                printf("\n\nVocê curtiu a postagem.");
+                break;
+            case 2:
+                printf("\n\nPostagem tem %d curtidas.", curtidas);
+                break;
+            case 0:
+                printf("\n\nSaindo da Rede Social.");
+                break;
+            default:
+                printf("\n\nOpção invalida!");
+        }
+        
+    }while(opcao != 0);
+    
+    return 0;
+}
